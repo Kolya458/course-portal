@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+//I don't know why application create a white gap at the top and at the bottom
+body {
+    margin: -19px 0 -19px 0;
+}
+
+.container {
+    padding: 0 85px 0 85px;
+}

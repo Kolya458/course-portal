@@ -1,0 +1,34 @@
+$backgrond: #414452;
+$text: #ffffff;
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: $text;
+    background: $backgrond;
+
+    &__logo {
+        width: 140px;
+        height: 64px;
+        object-fit: contain;
+    }
+    
+    &__authtorization {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+}
+
+.authtorization {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+
+    &__item {
+        margin: 0 25px 0 0
+    }
+}

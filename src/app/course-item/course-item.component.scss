@@ -1,0 +1,18 @@
+.course {
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__button {
+        margin: 5px;
+        width: 80px;
+    }
+}
