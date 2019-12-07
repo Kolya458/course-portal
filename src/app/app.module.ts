@@ -8,6 +8,7 @@ import { SearchComponent } from './search/search.component';
 import { CourseItemComponent } from './course-item/course-item.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     SearchComponent,
     CourseItemComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BreadcrumbsComponent
   ],
   imports: [
     BrowserModule,

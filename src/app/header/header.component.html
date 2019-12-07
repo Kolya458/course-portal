@@ -4,16 +4,10 @@
 
 
     <ul class="header__authtorization authtorization">
-        <li class="authtorization__item">
+        <li class="authtorization__item" *ngFor='let link of links'>
             <a>
-                <img src="assets/img/header/ic-user.svg" alt="login logo">
-                <span>User login</span>
-            </a>
-        </li>
-        <li class="authtorization__item">
-            <a>
-                <img src="assets/img/header/ic-exit.svg" alt="logout logo">
-                <span>Log off</span>
+                <img [src]="link.imgPath" alt="login logo">
+                <span>{{link.span}}</span>
             </a>
         </li>
     </ul>

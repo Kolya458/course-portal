@@ -1,8 +1,15 @@
+$text: #ffffff;
+
 //I don't know why application create a white gap at the top and at the bottom
 body {
     margin: -19px 0 -19px 0;
+    background:#f2f3f7;
 }
 
 .container {
     padding: 0 85px 0 85px;
+}
+
+a {
+    color: $text
 }
