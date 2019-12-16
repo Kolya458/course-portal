@@ -9,6 +9,6 @@
     <article>{{course.description}}</article>
     <aside class="course__buttons">
         <button class="course__button" (click)="edit()">Edit</button>
-        <button class="course__button" (click)="delete()">Delete</button>
+        <button class="course__button" (click)="delete(course.id)">Delete</button>
     </aside>
 </section>
