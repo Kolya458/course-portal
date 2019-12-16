@@ -1,8 +1,14 @@
-<h2 class="course__header">{{course.name}}</h2>
+<header class="course__header">
+    <h2>{{course.name}}</h2>
+    <section class="course__header-info">
+        <p>{{course.duration}} minutes </p>
+        <p>&nbsp;{{course.date.getDate()}}.{{course.date.getMonth()}}.{{course.date.getFullYear()}}</p>
+    </section>
+</header>
 <section class="course__content">
     <article>{{course.description}}</article>
     <aside class="course__buttons">
-        <button class="course__button">Edit</button>
-        <button class="course__button">Delete</button>
+        <button class="course__button" (click)="edit()">Edit</button>
+        <button class="course__button" (click)="delete()">Delete</button>
     </aside>
 </section>
