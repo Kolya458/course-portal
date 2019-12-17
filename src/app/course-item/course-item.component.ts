@@ -1,6 +1,6 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Course } from '../course';
-import { EventEmitter } from 'protractor';
+
 
 @Component({
   selector: 'app-course-item',
@@ -10,18 +10,17 @@ import { EventEmitter } from 'protractor';
 
 export class CourseItemComponent implements OnInit {
 
-  @Input() 
-  course: Course;
+  @Input() course: Course;
+  
+  @Output() delete = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  @Output() delete = new EventEmitter();
-
   deleteItem(id: number) {
-    this.delete.emit(id.toString());
+    this.delete.emit(id);
   }
 
   edit(){
