@@ -1,0 +1,11 @@
+.courses-list {
+    display: flex;
+    flex-direction: column;
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        margin: 10px;
+    }
+}

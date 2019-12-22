@@ -1,0 +1,14 @@
+<header class="course__header">
+    <h2>{{course.name}}</h2>
+    <section class="course__header-info">
+        <p>{{course.duration}} minutes </p>
+        <p>&nbsp;{{course.date | date}}</p>
+    </section>
+</header>
+<section class="course__content">
+    <article>{{course.description}}</article>
+    <aside class="course__buttons">
+        <button class="course__button" (click)="onEditButtonClick()">Edit</button>
+        <button class="course__button" (click)="onDeleteButtonClick()">Delete</button>
+    </aside>
+</section>

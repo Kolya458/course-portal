@@ -1,0 +1,14 @@
+<header class="header">
+
+    <img src="assets/img/header/logo.svg" alt="company logo" class="header__logo">
+
+
+    <ul class="header__authtorization authtorization">
+        <li class="authtorization__item" *ngFor='let link of links'>
+            <a>
+                <img [src]="link.imgPath" alt="login logo">
+                <span>{{link.span}}</span>
+            </a>
+        </li>
+    </ul>
+</header>

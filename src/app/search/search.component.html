@@ -1,0 +1,13 @@
+<form>
+    <input 
+        type="text" 
+        name="course" 
+        placeholder="Text to search"
+        [(ngModel)]="queryString"
+        />
+    <input 
+        type="submit" 
+        value="Search"
+        (click)="search()"
+        />
+</form>
