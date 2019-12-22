@@ -19,11 +19,11 @@ export class CourseItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  deleteItem(id: number) {
-    this.delete.emit(id);
+  onDeleteButtonClick() {
+    this.delete.emit(this.course.id);
   }
 
-  edit(){
+  onEditButtonClick(){
     console.log('edit')
   }
 
